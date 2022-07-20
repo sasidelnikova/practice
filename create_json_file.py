@@ -1,6 +1,6 @@
 import json
 
-my_json_string = """{
+my_json = """{
    "article": [
       {
          "id":"01",
@@ -23,6 +23,6 @@ my_json_string = """{
    ]
 }
 """
+my_json_string = json.loads(my_json)
 with open('test_file.json', 'w') as file:
     json.dump(my_json_string, file)
-      
